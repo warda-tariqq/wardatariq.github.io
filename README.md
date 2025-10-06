@@ -16,6 +16,4 @@ Modern academic portfolio built with **HTML + Tailwind (CDN)** for GitHub Pages.
 - In **Publications**, update the PDF and Code links
 - In **Projects**, adjust titles / links / tech stacks
 
----
 
-Built for you by ChatGPT 💙
