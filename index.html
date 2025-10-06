@@ -308,32 +308,26 @@
 
 
   <!-- Contact -->
-  <section id="contact" class="py-16 border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid md:grid-cols-2 gap-10 items-start">
-        <div>
-          <h2 class="text-2xl font-semibold">Get in touch</h2>
-          <p class="mt-2 text-slate-700">For collaborations, supervision, or speaking, reach me on email or LinkedIn.</p>
-          <div class="mt-5 flex flex-col gap-2 text-sm">
-            <a class="inline-flex items-center gap-2" href="mailto:wardatariqwt5005@gmail.com">
-              <span class="font-medium">Email:</span> <span>wardatariqwt5005@gmail.com</span>
-            </a>
-            <a class="inline-flex items-center gap-2" href="https://www.linkedin.com/in/warda-tariq-199506202/" target="_blank" rel="noopener">
-              <span class="font-medium">LinkedIn:</span> <span>/in/warda-tariq-199506202/</span>
-            </a>
-          </div>
-        </div>
-        <form class="rounded-2xl border border-slate-200 p-5 shadow-soft bg-white" onsubmit="event.preventDefault(); alert('This is a static site. Use the email/LinkedIn to contact me.');">
-          <label class="block text-sm font-medium">Your email</label>
-          <input class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="you@example.com" required />
-          <label class="block text-sm font-medium mt-4">Message</label>
-          <textarea class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" rows="4" placeholder="Hello! I'd like to collaborate..." required></textarea>
-          <button class="mt-4 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm hover:bg-brand-700 shadow-soft">Send</button>
-          <p class="text-xs text-slate-500 mt-2">Note: This demo form doesn't send messages. Please email me.</p>
-        </form>
-      </div>
+  <section class="py-12 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-semibold mb-4">Get in touch</h2>
+    <p class="text-lg text-slate-700 mb-6">For collaborations, supervision, or speaking, connect with me via Email or LinkedIn.</p>
+    
+    <div class="flex items-center space-x-6">
+      <!-- Email -->
+      <a href="mailto:wardatariqwt5005@gmail.com" class="flex items-center space-x-2 hover:text-brand-500">
+        <img src="https://img.icons8.com/ios-filled/30/000000/new-post.png" alt="Email icon" />
+        <span>wardatariqwt5005@gmail.com</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/warda-tariq-199506202/" class="flex items-center space-x-2 hover:text-brand-500" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/000000/linkedin.png" alt="LinkedIn icon" />
+        <span>/in/warda-tariq-199506202/</span>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer class="py-10 border-t border-slate-200 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
