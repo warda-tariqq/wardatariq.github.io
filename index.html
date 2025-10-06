@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warda Tariq — PhD Student in AI | HSE University</title>
+  <meta name="description" content="Warda Tariq — PhD researcher in AI & NLP. Publications, projects, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN for GitHub Pages -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50:'#f5f7ff',100:'#e9edff',200:'#d6dcff',300:'#b8c2ff',400:'#8f9bff',500:'#6b79ff',600:'#4b59e6',700:'#3947bf',800:'#2f3a99',900:'#242d75'
+            }
+          },
+          boxShadow: {
+            soft: '0 8px 30px rgba(0,0,0,.06)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="font-semibold tracking-tight text-slate-900">Warda<span class="text-brand-600">.</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-brand-700">About</a>
+          <a href="#research" class="hover:text-brand-700">Research</a>
+          <a href="#publications" class="hover:text-brand-700">Publications</a>
+          <a href="#projects" class="hover:text-brand-700">Projects</a>
+          <a href="#skills" class="hover:text-brand-700">Skills</a>
+          <a href="#education" class="hover:text-brand-700">Education</a>
+          <a href="#contact" class="hover:text-brand-700">Contact</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-slate-300 px-3 py-2 text-sm shadow-soft">
+          Menu
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#about" class="hover:text-brand-700">About</a>
+        <a href="#research" class="hover:text-brand-700">Research</a>
+        <a href="#publications" class="hover:text-brand-700">Publications</a>
+        <a href="#projects" class="hover:text-brand-700">Projects</a>
+        <a href="#skills" class="hover:text-brand-700">Skills</a>
+        <a href="#education" class="hover:text-brand-700">Education</a>
+        <a href="#contact" class="hover:text-brand-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 lg:py-28">
+      <div class="grid md:grid-cols-5 gap-10 items-center">
+        <div class="md:col-span-3">
+          <span class="inline-flex items-center gap-2 text-xs font-medium px-2 py-1 rounded-full bg-brand-50 text-brand-800 ring-1 ring-brand-100">Open to collaborations</span>
+          <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+            Warda Tariq
+          </h1>
+          <p class="mt-3 text-lg text-slate-600">PhD Student in Artificial Intelligence | HSE University</p>
+          <p class="mt-5 text-slate-700 leading-relaxed">
+            PhD researcher in Artificial Intelligence with 2+ years of experience in software development and applied machine learning.
+            Proven expertise in LLMs, multimodal NLP, and low-resource language modeling. Strong foundation in data structures and
+            algorithms with practical experience in model deployment, evaluation, and infrastructure design. Passionate about building
+            inclusive, accessible technologies through responsible AI.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm hover:bg-brand-700 shadow-soft">Contact</a>
+            <a href="#publications" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50">Publications</a>
+            <a href="mailto:wardatariqwt5005@gmail.com" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50">Email</a>
+            <a href="https://www.linkedin.com/in/warda-tariq-199506202/" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50">LinkedIn</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <div class="aspect-square rounded-2xl bg-gradient-to-br from-brand-100 via-white to-brand-50 border border-slate-200 p-2">
+            <div class="w-full h-full rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-400">
+              <!-- Replace this placeholder with your photo: /assets/img/profile.jpg -->
+              <span class="text-sm">Add your photo: <code>assets/img/profile.jpg</code></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Research focus -->
+  <section id="about" class="py-16 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <h2 class="text-2xl font-semibold">About</h2>
+          <p class="mt-3 text-slate-700">
+            I’m a first-year PhD researcher focused on AI & NLP for low-resource languages, with ongoing work on
+            Bartangi and Wakhi. My interests include LLMs, multimodal learning, morphological analysis,
+            and responsible AI.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Current Research</h3>
+          <ul class="mt-3 space-y-2 text-slate-700 list-disc pl-5">
+            <li>Rule-based and hybrid lemmatization for Pamiri languages (Bartangi, Wakhi)</li>
+            <li>Word embeddings & evaluation pipelines (CBOW/Skip-gram)</li>
+            <li>Corpus building for low-resource NLP</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Keywords</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">AI</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">NLP</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">LLMs</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">Low-Resource</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">Morphology</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">Embeddings</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">RAG</span>
+            <span class="px-2 py-1 text-xs rounded-lg bg-slate-100">MLOps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research highlights -->
+  <section id="research" class="py-16 border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold">Research Highlights</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl bg-white border border-slate-200 p-5 shadow-soft">
+          <h3 class="font-semibold">Bartangi Lemmatizer & Embeddings</h3>
+          <p class="mt-2 text-sm text-slate-700">Clean corpus creation, rule-based lemmatization, and CBOW/Skip‑gram embeddings with intrinsic evaluation.</p>
+        </article>
+        <article class="rounded-2xl bg-white border border-slate-200 p-5 shadow-soft">
+          <h3 class="font-semibold">Wakhi Corpus & Morphology</h3>
+          <p class="mt-2 text-sm text-slate-700">Expanding the pipeline to Wakhi with morphological parsing and POS‑based filtering for consistency.</p>
+        </article>
+        <article class="rounded-2xl bg-white border border-slate-200 p-5 shadow-soft">
+          <h3 class="font-semibold">Responsible, Inclusive AI</h3>
+          <p class="mt-2 text-sm text-slate-700">Design principles for accessible, multilingual systems; evaluation and deployment practices.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="py-16 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold">Publications</h2>
+      <ul class="mt-6 space-y-4">
+        <li class="rounded-2xl border border-slate-200 p-5 shadow-soft">
+          <h3 class="font-semibold">Building a Clean Bartangi Language Corpus and Training Word Embeddings for Low‑Resource Language Modeling</h3>
+          <p class="text-sm text-slate-600 mt-1">RANLP 2025 — Conference Paper, Varna (Sep 8–10, 2025)</p>
+          <div class="mt-3 flex gap-3 text-sm">
+            <a class="inline-flex items-center rounded-lg border border-slate-300 px-3 py-1 hover:bg-slate-50" href="#" aria-disabled="true">PDF (add link)</a>
+            <a class="inline-flex items-center rounded-lg border border-slate-300 px-3 py-1 hover:bg-slate-50" href="#" aria-disabled="true">Code (add link)</a>
+          </div>
+        </li>
+      </ul>
+      <p class="text-sm text-slate-500 mt-4">Add more items as they’re accepted. Replace “add link” with your ACL Anthology link and GitHub repo.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-semibold">Selected Projects</h2>
+        <a href="https://github.com/warda-tariqq" target="_blank" rel="noopener" class="text-sm text-brand-700 hover:underline">View GitHub →</a>
+      </div>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <article class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-soft">
+          <div class="h-28 bg-gradient-to-br from-brand-100 to-white"></div>
+          <div class="p-5">
+            <h3 class="font-semibold">Blockchain-based Voting System</h3>
+            <p class="mt-2 text-sm text-slate-700">Bachelor capstone project implementing secure e‑voting concepts with smart‑contract logic and auditability.</p>
+            <div class="mt-3 text-xs text-slate-600">Tech: Solidity (or conceptual), Web stack</div>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-soft">
+          <div class="h-28 bg-gradient-to-br from-brand-100 to-white"></div>
+          <div class="p-5">
+            <h3 class="font-semibold">Airline-Based Data Analysis</h3>
+            <p class="mt-2 text-sm text-slate-700">Master’s project exploring airline datasets for demand patterns, pricing, delays, and route analytics.</p>
+            <div class="mt-3 text-xs text-slate-600">Tech: Python, Pandas, SQL, Visualization</div>
+            <a class="inline-block mt-3 text-sm text-brand-700 hover:underline" href="https://www.hse.ru/en/ma/datasci/students/diplomas/926007204" target="_blank" rel="noopener">Project page</a>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-soft">
+          <div class="h-28 bg-gradient-to-br from-brand-100 to-white"></div>
+          <div class="p-5">
+            <h3 class="font-semibold">Bartangi Lemmatizer & Corpus</h3>
+            <p class="mt-2 text-sm text-slate-700">Rule‑based lemmatizer and clean corpus pipeline; CBOW embeddings and evaluation for Bartangi.</p>
+            <div class="mt-3 text-xs text-slate-600">Tech: Python, Regex rules, Word2Vec</div>
+          </div>
+        </article>
+        <!-- Project 4 -->
+        <article class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-soft">
+          <div class="h-28 bg-gradient-to-br from-brand-100 to-white"></div>
+          <div class="p-5">
+            <h3 class="font-semibold">Wakhi Corpus & Lemmatization</h3>
+            <p class="mt-2 text-sm text-slate-700">Extending the pipeline to Wakhi with morphological parsing and POS filtering for consistent embeddings.</p>
+            <div class="mt-3 text-xs text-slate-600">Tech: Python, Morphological parsing</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold">Skills</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-5 shadow-soft">
+          <h3 class="font-semibold">AI / NLP</h3>
+          <ul class="mt-2 text-sm text-slate-700 space-y-1 list-disc pl-5">
+            <li>LLMs, RAG, Prompting</li>
+            <li>Low-resource NLP, Morphology</li>
+            <li>Word embeddings (CBOW/Skip‑gram)</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5 shadow-soft">
+          <h3 class="font-semibold">Data & Software</h3>
+          <ul class="mt-2 text-sm text-slate-700 space-y-1 list-disc pl-5">
+            <li>Python, SQL, MongoDB</li>
+            <li>Pandas, NumPy, scikit‑learn</li>
+            <li>APIs, Flask/FastAPI basics</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5 shadow-soft">
+          <h3 class="font-semibold">MLOps & Infra</h3>
+          <ul class="mt-2 text-sm text-slate-700 space-y-1 list-disc pl-5">
+            <li>Docker, Azure (intro), MLflow</li>
+            <li>Version control (Git/GitHub)</li>
+            <li>Evaluation, deployment basics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold">Education</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-5 bg-white shadow-soft">
+          <h3 class="font-semibold">PhD in Artificial Intelligence</h3>
+          <p class="text-sm text-slate-700 mt-1">Higher School of Economics (HSE), Moscow — 2025–present</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5 bg-white shadow-soft">
+          <h3 class="font-semibold">MSc in Data Science</h3>
+          <p class="text-sm text-slate-700 mt-1">Higher School of Economics (HSE), Moscow — 2023–2025</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5 bg-white shadow-soft">
+          <h3 class="font-semibold">BSc in Information Technology</h3>
+          <p class="text-sm text-slate-700 mt-1">Pakistan — 2016–2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-semibold">Get in touch</h2>
+          <p class="mt-2 text-slate-700">For collaborations, supervision, or speaking, reach me on email or LinkedIn.</p>
+          <div class="mt-5 flex flex-col gap-2 text-sm">
+            <a class="inline-flex items-center gap-2" href="mailto:wardatariqwt5005@gmail.com">
+              <span class="font-medium">Email:</span> <span>wardatariqwt5005@gmail.com</span>
+            </a>
+            <a class="inline-flex items-center gap-2" href="https://www.linkedin.com/in/warda-tariq-199506202/" target="_blank" rel="noopener">
+              <span class="font-medium">LinkedIn:</span> <span>/in/warda-tariq-199506202/</span>
+            </a>
+          </div>
+        </div>
+        <form class="rounded-2xl border border-slate-200 p-5 shadow-soft bg-white" onsubmit="event.preventDefault(); alert('This is a static site. Use the email/LinkedIn to contact me.');">
+          <label class="block text-sm font-medium">Your email</label>
+          <input class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="you@example.com" required />
+          <label class="block text-sm font-medium mt-4">Message</label>
+          <textarea class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" rows="4" placeholder="Hello! I'd like to collaborate..." required></textarea>
+          <button class="mt-4 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm hover:bg-brand-700 shadow-soft">Send</button>
+          <p class="text-xs text-slate-500 mt-2">Note: This demo form doesn't send messages. Please email me.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+      <p>© <span id="year"></span> Warda Tariq. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#home">Top</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
